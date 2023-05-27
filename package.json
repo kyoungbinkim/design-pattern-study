@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "디자인 패턴 공부하자 ✏️",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
     "testrpc": "node ./node_modules/ganache-cli/cli.js --hardfork istanbul --port 7545 --gasLimit 0x3FFFFFFFFFFFF --gasPrice 1 --defaultBalanceEther 100000000000 --networkId 1234 --account_keys_path ./contract/keys.json"
   },
   "repository": {
@@ -18,6 +20,12 @@
   },
   "homepage": "https://github.com/kyoungbinkim/design-pattern-study#readme",
   "dependencies": {
-    "ganache-cli": "^6.12.2"
+    "@ethersproject/keccak256": "^5.7.0",
+    "@ethersproject/strings": "^5.7.0",
+    "fs": "^0.0.1-security",
+    "ganache-cli": "^6.12.2",
+    "lodash": "^4.17.21",
+    "web3": "^1.10.0",
+    "web3-eth-contract": "^1.10.0"
   }
 }
