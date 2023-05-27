@@ -49,6 +49,7 @@ contract VerifySchnorr {
         );
 
         // check r` == r
+        require(BigNumbers.cmp(calc_r, _r, false) == 0, "verify failed");
         return BigNumbers.cmp(calc_r, _r, false) == 0;
     }
 
