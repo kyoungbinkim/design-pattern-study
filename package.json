@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
-    "testrpc": "node ./node_modules/ganache-cli/cli.js --hardfork istanbul --port 7545 --gasLimit 0x3FFFFFFFFFFFF --gasPrice 1 --defaultBalanceEther 100000000000 --networkId 1234 --account_keys_path ./contract/keys.json"
+    "testrpc": "node ./node_modules/ganache-cli/cli.js --hardfork istanbul --port 7545 --gasLimit 0x3FFFFFFFFFFFF --gasPrice 1 --defaultBalanceEther 100000000000 --networkId 1234 --account_keys_path ./contract/keys.json",
+    "singleton" : "npm start singleton"
   },
   "repository": {
     "type": "git",
