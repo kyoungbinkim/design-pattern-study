@@ -38,16 +38,12 @@ class schnorrContract{
             gas : 150000000
         })
         this.contractIns = ins;
-        // .then((contractIns) => {
-        //     console.log(contractIns.options.address)
-        //     this.contractIns = contractIns;
-        // }
     }
 
     async schnorrVerify(message, signature, pk=SchnorrSignature.pk.pk.toString()){
         if(this.contractIns == undefined){
             await this.deploy();
-            console.log(" dasdas" ,this.contractIns.options.address)
+            console.log("contract address : " ,this.contractIns.options.address)
         }
 
         console.log(types.asciiToHex(message).toString(10))
