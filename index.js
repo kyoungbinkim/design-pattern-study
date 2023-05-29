@@ -1,4 +1,4 @@
-import singleton from './singleton'
+import singleton from './CreationalPatterns/singleton'
 import SchnorrSignature from './SchnorrSignature'
 
 let selector = process.argv[2]
