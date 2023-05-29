@@ -31,7 +31,7 @@ class Adaptee{
     constructor() {}
 
     specificOperation() {
-        throw new Error("Not Implemented");
+        console.log("Hi, I'm Adaptee Sepcific Operation")
     }
 }
 
@@ -46,3 +46,6 @@ class Adapter extends Target {
         this.Adaptee.specificOperation();
     }
 }
+
+const adapter = new Adapter();
+adapter.operation();
