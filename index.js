@@ -1,3 +1,7 @@
+/*
+    https://ko.wikipedia.org/wiki/%EB%94%94%EC%9E%90%EC%9D%B8_%ED%8C%A8%ED%84%B4_(%EC%B1%85) 하나씩 정리하는 중.
+*/
+
 import singleton from './CreationalPatterns/singleton'
 import SchnorrSignature from './SchnorrSignature'
 
