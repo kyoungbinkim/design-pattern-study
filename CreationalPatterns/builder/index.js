@@ -15,6 +15,14 @@
     매개변수 설정 방지: 객체 생성에 필요한 매개변수를 일일히 설정하는 것을 방지하여 실수를 줄이고 코드의 가독성을 개선합니다.
     객체 생성 코드의 일관성: 객체 생성 코드를 일관된 구조로 유지할 수 있으며, 객체 생성 과정의 구체적인 세부사항을 숨길 수 있습니다.
 
+    점층적 생성자를 피할 수 있습니다. 
+    ex) 
+    class Pizza {
+        Pizza(int size) { ... }
+        Pizza(int size, boolean cheese) { ... }
+        Pizza(int size, boolean cheese, boolean pepperoni) { ... }
+    위와 같은 코드를 빌더로 구현하자.
+    
     https://ko.wikipedia.org/wiki/%EB%B9%8C%EB%8D%94_%ED%8C%A8%ED%84%B4 코드를 nodejs 코드로 변경
 */
 
