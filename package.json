@@ -13,7 +13,8 @@
     "strategy" : "npm run node ./BehavioralPatterns/strategy/index.js",
     "adapter"  : "npm run node ./StructuralPatterns/adapter/index.js",
     "builder"  : "npm run node ./CreationalPatterns/builder/index.js",
-    "prototype": "npm run node ./CreationalPatterns/prototype/index.js"
+    "prototype": "npm run node ./CreationalPatterns/prototype/index.js",
+    "abstractFactory": "npm run node ./CreationalPatterns/abstractFactory/index.js"
   },
   "repository": {
     "type": "git",
