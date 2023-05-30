@@ -18,13 +18,13 @@
 // code from chatGPT
 // 프로토타입(Prototype) 객체
 const animalPrototype = {
-    setName: function (name) {
+    setName: (name) => {
       this.name = name;
     },
-    getName: function () {
+    getName: () => {
       return this.name;
     },
-    clone: function () {
+    clone: () => {
       const cloned = Object.create(this);
       cloned.name = this.name;
       return cloned;
